@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CerniApps - Web and Apps</title>
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="estilos.css" rel="stylesheet">
+    <!--------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Barra Navegacion -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <!-- Contenido global -->
+            <div class="container">
+
+                <!-- Logo home -->
+                <a class="navbar-brand" id="logo-text" href="./index.html">
+                  <img id="logo" src="./media/cerni-logo.png" alt="...">
+                  CerniApps
+                </a>
+
+                <!-- Boton toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./software.html">Software</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+      <!-- Banner -->
+      <div class="position-relative overflow-hidden p-3 p-md-5 text-center" id="banner-software">
+        <div class="col-md-6 p-lg-4 mx-auto my-5">
+          <h1 class="display-3 fw-bold">Contacta con CerniApps</h1>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+      </div>
+      <!-- Div Formulario -->
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10">
+            <div class="contact-section">
+              <h2 class="text-center mb-4">Escríbenos</h2>
+              <div class="row">
+                <div class="col-md-5 contact-info">
+                  <a href="https://github.com/Cernical" target="_blank">
+                    <div class="col">
+                      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./media/github.png');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Github</h3>
+                          <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                              <img src="https://avatars.githubusercontent.com/u/84983282?v=4" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                              <small>Cernical</small>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <form>
+                    <div class="form-group">
+                      <label for="name">Nombre</label>
+                      <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Tu email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Mensaje</label>
+                      <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </main>
+    <footer class="footer mt-auto py-3 bg-dark">
+        <!-- Contenido pie -->
+        <div class="container text-center">
+          <span style="color: white;">Hecho en bootstrap con amor ❤️</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
